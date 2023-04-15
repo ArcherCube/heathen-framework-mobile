@@ -1,0 +1,143 @@
+//-----------------------------------------------常用类-------------------------------------------------------
+//生成常用的margin补给
+@auto-margin-generate-step: 5;
+@auto-margin-generate-max: 100;
+
+.generate-gutter(@i, @inc, @n) when (@i =< @n) {
+    .margin-top-@{i} {
+        margin-top: @i* 1px;
+    }
+
+    .margin-bottom-@{i} {
+        margin-bottom: @i* 1px;
+    }
+
+    .margin-left-@{i} {
+        margin-left: @i* 1px;
+    }
+
+    .margin-right-@{i} {
+        margin-right: @i* 1px;
+    }
+
+    .top-@{i} {
+        top: @i* 1px;
+    }
+
+    .bottom-@{i} {
+        bottom: @i* 1px;
+    }
+
+    .left-@{i} {
+        left: @i* 1px;
+    }
+
+    .right-@{i} {
+        right: @i* 1px;
+    }
+
+    .generate-gutter((@i + @inc), @inc, @n );
+}
+
+.generate-gutter(0, @auto-margin-generate-step, @auto-margin-generate-max);
+
+.full-width {
+    width: 100%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.split-line {
+    position: absolute;
+    background: #e7e7e7;
+    width: 100%;
+    height: 1px;
+    z-index: 1;
+}
+
+//-----------------------------------------------预设动画-------------------------------------------------------
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes popUp {
+    0% {
+        transform: translate3d(0, 1rem, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes popUp {
+    0% {
+        transform: translate3d(0, 1rem, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes scaleShow {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes scaleShow {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

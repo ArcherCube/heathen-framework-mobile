@@ -1,0 +1,33 @@
+{
+  "name": "",
+  "short_name": "",
+  "display": "standalone",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/logo.ico",
+      "sizes": "128x128",
+      "type": "image/ico"
+    },
+    {
+      "src": "/logo.ico",
+      "sizes": "144x144",
+      "type": "image/ico"
+    },
+    {
+      "src": "/logo.ico",
+      "sizes": "152x152",
+      "type": "image/ico"
+    },
+    {
+      "src": "/logo.ico",
+      "sizes": "192x192",
+      "type": "image/ico"
+    },
+    {
+      "src": "/logo.ico",
+      "sizes": "256x256",
+      "type": "image/ico"
+    }
+  ]
+}
