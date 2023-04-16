@@ -51,6 +51,9 @@ requireContext.keys().forEach((path) => {
     }
 });
 
+//TODO:路由顺序整理（按前缀排序，/和*在最后面）
+
+Logger.log(`pages routes: `, pages);
 Logger.summary(`export ${count} pages`);
 
 export default pages;
